@@ -1,0 +1,109 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Education</title>
+    <link rel="stylesheet" href="horvee.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">BHTech</div>
+            <nav>
+                <ul class="nav-lists">
+                    <li><a href="#home" class="navbar-link">Home</a></li>
+                    <li><a href="#courses" class="navbar-link">Courses</a></li>
+                    <li><a href="#admissions" class="navbar-link">Admissions</a></li>
+                    <li><a href="#about" class="navbar-link">About Us</a></li>
+                    <li><button id="login-btn" class="nav-button">Log In</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <h1 class="animate-fade-in">Welcome to BHTech, Your Learning Partner</h1>
+            <p class="animate-fade-in delay-200">We provide world-class education for everyone.</p>
+            <a href="#courses" class="cta-button animate-fade-in delay-400">Explore Courses</a>
+        </section>
+
+        <section id="courses" class="main-section revealable">
+            <h2>Popular Courses</h2>
+            <div class="filter-container">
+                <input type="text" id="course-search" placeholder="Search courses by title...">
+            </div>
+            <div class="course-list" id="course-list">
+                
+            </div> 
+        </section>
+
+        <section id="admissions" class="main-section revealable">
+            <h2>Admission Portal</h2>
+            <form id="admission-form">
+               
+                <fieldset class="form-step" id="step-1">
+                    <legend>Step 1: Personal Information</legend>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" required>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" required>
+                    <button type="button" class="next-step-btn cta-button">Next</button>
+                </fieldset>
+
+               
+                <fieldset class="form-step" id="step-2" style="display: none;">
+                    <legend>Step 2: Course Selection</legend>
+                    <label for="courseSelect">Select Course:</label>
+                    <select id="courseSelect" required>
+                        <option value="">-- Choose a course --</option>
+                    </select>
+                    <button type="button" class="prev-step-btn cta-button">Back</button>
+                    <button type="button" class="next-step-btn cta-button">Next</button>
+                </fieldset>
+
+                
+                <fieldset class="form-step" id="step-3" style="display: none;">
+                    <legend>Step 3: Review and Submit</legend>
+                    <div id="review-details"></div>
+                    <button type="button" class="prev-step-btn cta-button">Back</button>
+                    <button type="submit" class="cta-button">Submit Application</button>
+                </fieldset>
+            </form>
+        </section>
+        
+        <section id="about" class="main-section revealable">
+            <h2>About Us</h2>
+            <p>BHTech has been a leader in online education since 2020. Our mission is to make learning accessible to all.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 BHTech. All rights reserved.</p>
+        </div>
+    </footer>
+
+    
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Log In</h3>
+            <form id="login-form">
+                <label for="username"> Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit" class="cta-button">Sign In</button>
+            </form>
+        </div>
+    </div>
+    <button id="PrintBtn">print</button>
+
+    <script src="horvee.js"></script>
+</body> 
+</html>
